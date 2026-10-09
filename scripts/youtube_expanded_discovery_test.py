@@ -286,8 +286,9 @@ def main():
 
         emails = sorted(set(EMAIL_RE.findall(channel.get("description", ""))), key=str.casefold)
         instagram_urls = instagram_profile_candidates(channel.get("description", ""))
-        email_count += bool(emails)
-        instagram_count += bool(instagram_urls)
+        if size_filter == "PASS":
+            email_count += bool(emails)
+            instagram_count += bool(instagram_urls)
         channel.update({
             "size_filter": size_filter,
             "size_filter_reason": reason,
