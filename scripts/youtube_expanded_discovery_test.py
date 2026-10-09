@@ -51,11 +51,11 @@ RESULTS_PER_SEARCH = 25
 MIN_SUBSCRIBERS = 5_000
 MAX_SUBSCRIBERS = 100_000
 EMAIL_RE = re.compile(
-    r"(?<![\\w.+-])[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}(?![\\w.-])",
+    r"(?<![\w.+-])[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}(?![\w.-])",
     re.I,
 )
 INSTAGRAM_RE = re.compile(
-    r"https?://(?:www\\.)?instagram\\.com/[^\\s<>\\"'|,]+", re.I
+    r"""https?://(?:www\.)?instagram\.com/[^\s<>"'|,]+""", re.I
 )
 
 
