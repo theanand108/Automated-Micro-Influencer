@@ -1,6 +1,7 @@
-# Environment
+# Environment and secrets
 .env
 .env.*
+!.env.example
 
 # Python
 __pycache__/
@@ -24,5 +25,5 @@ env/
 .coverage
 htmlcov/
 
-# Generated data
+# Raw or sensitive source data (keep curated deliverables under data/feasibility/)
 data/raw/
