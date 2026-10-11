@@ -1,0 +1,69 @@
+{
+  "campaign_name": "Demo Software Product Outreach",
+  "brand_name": "Demo Software Product",
+  "product_description": "A software product that helps people work more efficiently using digital tools. Replace this description with the actual product before generating outreach.",
+  "target_audience": [
+    "software developers",
+    "students learning technology",
+    "technology professionals",
+    "people who use AI and productivity software"
+  ],
+  "target_niches": [
+    "AI tools",
+    "developer productivity",
+    "software tutorials",
+    "programming",
+    "technology reviews"
+  ],
+  "target_regions": [],
+  "platforms": [
+    "YouTube",
+    "Instagram"
+  ],
+  "minimum_followers": 5000,
+  "maximum_followers": 100000,
+  "relevance_terms": [
+    "ai tools",
+    "artificial intelligence",
+    "generative ai",
+    "chatgpt",
+    "claude",
+    "gemini",
+    "ai agent",
+    "ai productivity",
+    "automation",
+    "developer tools",
+    "developer productivity",
+    "software development",
+    "software engineering",
+    "programming",
+    "python",
+    "javascript",
+    "web development",
+    "coding tutorial",
+    "coding project",
+    "machine learning",
+    "data science",
+    "llm",
+    "rag",
+    "productivity app",
+    "tech review",
+    "technology review",
+    "software review",
+    "gadget review"
+  ],
+  "exclusion_terms": [
+    "movie recap",
+    "horror story",
+    "fictional story",
+    "ai generated story",
+    "ancient robot",
+    "gaming highlights"
+  ],
+  "qualification_policy": {
+    "automatic_final_qualification": false,
+    "high_relevance_minimum_distinct_terms": 3,
+    "possible_relevance_minimum_distinct_terms": 1,
+    "note": "Keyword evidence is only a prioritization signal. Human review is required before final qualification."
+  }
+}
