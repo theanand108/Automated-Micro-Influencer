@@ -179,14 +179,14 @@ def parse_page(page_text):
     return parser, emails
 
 
-def candidate_pages(start_url, session):
+def candidate_pages(start_url, session, max_pages=MAX_PAGES_PER_CREATOR):
     """Fetch a linked homepage and up to two obvious same-host contact/about pages."""
     parsed_start = urlparse(start_url)
     root_host = (parsed_start.hostname or "").casefold()
     queue = [start_url]
     visited = set()
     observations = []
-    while queue and len(visited) < MAX_PAGES_PER_CREATOR:
+    while queue and len(visited) < max_pages:
         url = queue.pop(0)
         if url in visited or not same_host(url, root_host):
             continue
@@ -233,7 +233,10 @@ def main():
         attempted_urls = set()
         site_statuses = []
         for site in sites:
-            for page_url, status, emails in candidate_pages(site, session):
+            remaining_pages = MAX_PAGES_PER_CREATOR - len(attempted_urls)
+            if remaining_pages <= 0:
+                break
+            for page_url, status, emails in candidate_pages(site, session, remaining_pages):
                 attempted_urls.add(page_url)
                 site_statuses.append(f"{page_url} [{status}]")
                 for email in sorted(emails, key=str.casefold):
