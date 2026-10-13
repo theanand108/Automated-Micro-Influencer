@@ -1,19 +1,22 @@
 {
-  "campaign_name": "Demo Software Product Outreach",
-  "brand_name": "Demo Software Product",
-  "product_description": "A software product that helps people work more efficiently using digital tools. Replace this description with the actual product before generating outreach.",
+  "campaign_name": "DevFlow AI — Fictional Demonstration Outreach",
+  "campaign_type": "fictional_demonstration",
+  "brand_name": "DevFlow AI",
+  "fictional_product": true,
+  "product_description": "A fictional AI-powered developer productivity assistant concept intended only to demonstrate this assignment's influencer outreach workflow. The hypothetical concept helps developers understand code, draft documentation, and streamline repetitive programming tasks. No real product availability, customers, performance claims, or paid partnership is asserted.",
+  "campaign_disclosure": "DevFlow AI is fictional and used only for this assignment demonstration. Do not imply that a real company, deployed product, customer base, or paid collaboration exists.",
   "target_audience": [
     "software developers",
-    "students learning technology",
+    "students learning programming",
     "technology professionals",
-    "people who use AI and productivity software"
+    "people interested in AI-assisted coding and developer productivity"
   ],
   "target_niches": [
-    "AI tools",
+    "AI coding tools",
     "developer productivity",
     "software tutorials",
     "programming",
-    "technology reviews"
+    "software engineering"
   ],
   "target_regions": [],
   "platforms": [
@@ -23,6 +26,8 @@
   "minimum_followers": 5000,
   "maximum_followers": 100000,
   "relevance_terms": [
+    "ai coding",
+    "ai coding tools",
     "ai tools",
     "artificial intelligence",
     "generative ai",
@@ -31,7 +36,8 @@
     "gemini",
     "ai agent",
     "ai productivity",
-    "automation",
+    "coding assistant",
+    "code assistant",
     "developer tools",
     "developer productivity",
     "software development",
@@ -43,14 +49,12 @@
     "coding tutorial",
     "coding project",
     "machine learning",
-    "data science",
+    "large language model",
     "llm",
     "rag",
+    "automation",
     "productivity app",
-    "tech review",
-    "technology review",
-    "software review",
-    "gadget review"
+    "software tutorial"
   ],
   "exclusion_terms": [
     "movie recap",
@@ -64,6 +68,17 @@
     "automatic_final_qualification": false,
     "high_relevance_minimum_distinct_terms": 3,
     "possible_relevance_minimum_distinct_terms": 1,
-    "note": "Keyword evidence is only a prioritization signal. Human review is required before final qualification."
+    "note": "Keyword evidence is only a prioritization signal. Human review must verify recent content, creator identity, campaign fit, and contact source before final qualification."
+  },
+  "outreach_policy": {
+    "email_word_count_minimum": 60,
+    "email_word_count_maximum": 90,
+    "instagram_dm_word_count_minimum": 15,
+    "instagram_dm_word_count_maximum": 30,
+    "personalization_must_reference_observed_evidence": true,
+    "do_not_invent_creator_facts": true,
+    "do_not_claim_real_product_or_paid_partnership": true,
+    "do_not_send_real_outreach_without_explicit_user_approval": true,
+    "missing_email_value": "Not Found"
   }
 }
